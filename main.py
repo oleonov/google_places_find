@@ -9,11 +9,12 @@ from tinydb import TinyDB, Query
 gmaps = googlemaps.Client(key='put_your_google_maps_api_key_here')
 
 center = (3.1386741, 101.604588)
-small_radius = 1
 radius = 5
 min_rating = 4.4
 min_rating_total = 900
 keyword = "cafe"
+
+small_radius = 1
 
 # MongoDB
 db = TinyDB('google_places.json')
